@@ -1,3 +1,8 @@
+/*
+Author: Kürşat Ercan
+Note: Activate the animation function to see the animation. 
+Note2:Select small numbers to see the animation clearly!
+*/
 #include <stdio.h>
 #include <time.h> 
 
@@ -35,8 +40,6 @@ void shakerSort(int array[],int len_array) {
 			temp = array[i - 1];
 			array[i - 1] = array[i];
 			array[i] = temp;
-			//for (int i = 0; i < len_array; i++) printf("%d ", array[i]);
-			//printf("\n");
 			//animation(array, len_array);
 			continue;
 		}
@@ -47,8 +50,6 @@ void shakerSort(int array[],int len_array) {
 					temp = array[i + 1];
 					array[i + 1] = array[i];
 					array[i] = temp;
-					//for (int i = 0; i < len_array; i++) printf("%d ", array[i]);
-					//printf("\n");
 					//animation(array, len_array);
 					continue;
 				}
@@ -64,12 +65,12 @@ void main() {
 	int array[] = { 5,7,2,1,7,9,3,5,10 };
 	int len_array = (sizeof(array) / sizeof(array[0]));
 	isMaxNum(array,len_array);
-	int start_time = clock();
+	//int start_time = clock();
 	shakerSort(array, len_array);
-	int finish_time = clock();
+	//int finish_time = clock();
 	for (int i = 0; i < len_array; i++) printf("%d ", array[i]);
 	printf("\n");
-	printf("start: %d\nfinish: %d\ntime: %d", start_time, finish_time, finish_time - start_time);
-	printf("\n");
+	//printf("start: %d\nfinish: %d\ntime: %d", start_time, finish_time, finish_time - start_time);
+	//printf("\n");
 }
 	
