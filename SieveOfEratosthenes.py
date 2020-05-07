@@ -1,4 +1,5 @@
 # Erastotenes Kalburu
+# Finding prime numbers
 
 def primes(num):
     sum=0
